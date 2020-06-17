@@ -1,0 +1,68 @@
+Combinators
+================
+
+Adjacent Sibling
+----------------
+
+h1 + p {
+
+}
+
+- Property will only be applied to p element if it directly follows a h1 tag.
+- Elements share the same parent.
+- Secodn element comes immediately after fisrt element.
+
+General Sibling
+---------------
+
+h2 ~ p {
+
+}
+
+- P comes after h1, but does not have to be directly after it.
+
+Child Combinator
+----------------
+
+div > p {
+
+}
+
+- Any p that is a direct child of a div, will get the style specified.
+
+Decendant Combinator
+--------------------
+
+div p {
+
+}
+
+- All p elements inside the div will get the style applied.
+
+
+Margin-Collapsing
+-----------------
+
+- 2 elements under each other -> the bigger margin wins.
+- Work around => use margin-top / margin-bottom.
+
+box-sizing: border-box => calculates total width with padding and border added to the total width.
+
+Pseudo Classes
+===============
+ Defines the style of a special state of an element
+ :class name
+
+ h1:hover {}
+
+ Pseudo Elements
+ ===============
+ DEfines the stule of a specific part of an element.
+
+ h1::active {}
+
+ Z-Index:
+ ========
+ Wont work if there is no position Property applied to the element.
+
+ Sticky: Hybrid between relative and fixed.
